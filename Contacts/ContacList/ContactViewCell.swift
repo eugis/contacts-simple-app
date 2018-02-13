@@ -23,7 +23,7 @@ internal class ContactViewCell: UITableViewCell {
         nameLabel.text = cellViewModel.name
         buisnessLabel.text = cellViewModel.profession
         favoriteImageView.image = UIImage(named: cellViewModel.contactClass.value.imageName)
-        imageView?.load(imageURLString: cellViewModel.smallAvatarURL,
+        avatarImageView.load(imageURLString: cellViewModel.smallAvatarURL,
                         with: "icon-avatar-small")
     }
 }
