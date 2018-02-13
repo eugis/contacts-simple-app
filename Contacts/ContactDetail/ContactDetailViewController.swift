@@ -114,5 +114,6 @@ fileprivate extension ContactDetailViewController {
         tableView.estimatedRowHeight = 100.0
         tableView.register(cell: ContactHeaderViewCell.self)
         tableView.register(cell: InformationViewCell.self)
+        tableView.tableFooterView = UIView()
     }
 }
