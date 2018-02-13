@@ -19,7 +19,7 @@ struct Contact {
     let isFavorite: Bool
     let companyName: String? // TODO: revise, may be not the best name
     let address: Address?
-    let birthday: Date?
+    let birthdate: Date?
     let phones: [Phone]?
     let email: String?
     
@@ -31,7 +31,7 @@ struct Contact {
                        isFavorite:favorite,
                        companyName:companyName,
                        address: address,
-                       birthday: birthday,
+                       birthdate: birthdate,
                        phones:phones,
                        email:email)
     }
@@ -49,9 +49,9 @@ extension Contact: Argo.Decodable {
             <*> json <| "isFavorite"
             <*> json <|? "companyName"
             <*> json <|? "address"
-            <*> json <|? "birthday"
+            <*> json <|? "birthdate"
             <*> phones(from: json)
-            <*> json <|? "email"
+            <*> json <|? "emailAddress"
     }
     
     static private func phones(from json: JSON) -> Decoded<[Phone]?> {

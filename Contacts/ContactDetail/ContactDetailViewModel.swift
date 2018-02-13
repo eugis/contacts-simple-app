@@ -88,12 +88,12 @@ fileprivate extension ContactViewModel {
             information.append(AddressInformationViewModel(with: address))
         }
         
-        if let email = contact.email {
-            information.append(BaseInformationViewModel(title: "email", firstInformation: email))
+        if let birthday = contact.birthdate {
+            information.append(BaseInformationViewModel(title: "birthday", firstInformation: birthday.string))
         }
         
-        if let birthday = contact.birthday {
-            information.append(BaseInformationViewModel(title: "birthday", firstInformation: birthday.string))
+        if let email = contact.email {
+            information.append(BaseInformationViewModel(title: "email", firstInformation: email))
         }
         
         return information
