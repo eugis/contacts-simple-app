@@ -25,7 +25,7 @@ class ContactListViewModel {
         self.fetchContacts()
     }
     
-    // TODO: Should be a better way to map result. NICER
+    // TODO: is better to use an Action: show refresh control and errors
     func fetchContacts() {
         contacts <~ contactRepository.fetchContacts()
                         .liftError()
@@ -56,7 +56,6 @@ class ContactListViewModel {
 
 extension ContactListViewModel: ContactManager {
     
-    //TODO: revise this to improve
     func changeClass(of contact: ContactViewModel, from oldClass: ContactsClass) {
         guard var oldList = contacts.value[oldClass] else { return }
         guard let oldIndex = (oldList.index { $0 === contact }) else { return }

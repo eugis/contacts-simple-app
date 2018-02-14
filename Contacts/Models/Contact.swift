@@ -17,7 +17,7 @@ struct Contact {
     let name: String
     let avatar: Avatar
     let isFavorite: Bool
-    let companyName: String? // TODO: revise, may be not the best name
+    let companyName: String? 
     let address: Address?
     let birthdate: Date?
     let phones: [Phone]?

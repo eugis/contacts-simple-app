@@ -12,7 +12,7 @@ enum ContactsClass: UInt {
     case favorite
     case noFavorite
     
-    // TODO: is missing to localize
+    // TODO: should be localized 
     var title: String {
         switch self {
         case .favorite: return "Favorite Contacts"

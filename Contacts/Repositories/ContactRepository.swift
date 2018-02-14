@@ -48,7 +48,6 @@ fileprivate extension ContactRepositoryImplementation {
         }
     }
     
-    // TODO: This should be improved
     private var serializationError: NSError {
         return NSError(domain: "contacts.error",
                        code: 100,

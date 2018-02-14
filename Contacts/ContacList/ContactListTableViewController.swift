@@ -48,7 +48,6 @@ extension ContactListTableViewController: UITableViewDelegate {
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    //TODO: is missing to fecth image
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ContactViewCell.reuseIdentifier, for: indexPath) as? ContactViewCell else { return UITableViewCell() }
         guard let contactClass = ContactsClass(rawValue: UInt(indexPath.section)) else { return UITableViewCell() }
@@ -67,13 +66,11 @@ fileprivate extension ContactListTableViewController {
     fileprivate func bindViewModel() {
         title = contactListViewModel.title
         // This should be in viewWillAppear if it were necessary to update every time
-        // TODO: validate if it's a better way
         contactListViewModel.contacts.producer
                                         .on(value: { [weak self] _ in self?.tableView.reloadData() })
                                         .start()
         
         contactListViewModel.fetchContacts()
-        contactListViewModel
     }
     
     fileprivate func configureTableView() {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F493AAD520333AB3003FBF9E /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = F493AAD420333AB3003FBF9E /* Localized.strings */; };
 		F493AADA20333B9B003FBF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493AAD620333B9A003FBF9E /* LaunchScreen.storyboard */; };
 		F493AADB20333B9B003FBF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493AAD820333B9B003FBF9E /* Main.storyboard */; };
 		F4C30FC62029C79F005035BE /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C30FC52029C79F005035BE /* ContactRepository.swift */; };
@@ -83,7 +82,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F493AAD420333AB3003FBF9E /* Localized.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
 		F493AAD720333B9A003FBF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Contacts/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F493AAD920333B9B003FBF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Contacts/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C30FC52029C79F005035BE /* ContactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				F493AAD820333B9B003FBF9E /* Main.storyboard */,
 				F4E2D476201CBF5B006D7A7A /* AppDelegate.swift */,
 				F4E2D47D201CBF5B006D7A7A /* Assets.xcassets */,
-				F493AAD420333AB3003FBF9E /* Localized.strings */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -358,7 +355,6 @@
 				F493AADB20333B9B003FBF9E /* Main.storyboard in Resources */,
 				F4F622942030F9E200E3764E /* InformationViewCell.xib in Resources */,
 				F4E2D47E201CBF5B006D7A7A /* Assets.xcassets in Resources */,
-				F493AAD520333AB3003FBF9E /* Localized.strings in Resources */,
 				F4E2D4A4201CC5C4006D7A7A /* ContactViewCell.xib in Resources */,
 				F4F622922030C77900E3764E /* ContactHeaderViewCell.xib in Resources */,
 			);
