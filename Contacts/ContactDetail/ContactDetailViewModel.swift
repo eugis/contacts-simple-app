@@ -89,7 +89,7 @@ fileprivate extension ContactViewModel {
         }
         
         if let birthday = contact.birthdate {
-            information.append(BaseInformationViewModel(title: "birthday", firstInformation: birthday.string))
+            information.append(BaseInformationViewModel(title: "birthdate", firstInformation: birthday.string))
         }
         
         if let email = contact.email {

@@ -73,6 +73,7 @@ fileprivate extension ContactListTableViewController {
                                         .start()
         
         contactListViewModel.fetchContacts()
+        contactListViewModel
     }
     
     fileprivate func configureTableView() {
